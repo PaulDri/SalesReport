@@ -35,16 +35,16 @@ class getSalesReport(generics.ListAPIView):
         
         return queryset
 
-# #For creating data
-# class createSalesReport(generics.CreateAPIView):
-#     serializer_class = SalesSerializer
-#     queryset = SalesReport.objects.all()
+#For creating data
+class createSalesReport(generics.CreateAPIView):
+    serializer_class = SalesSerializer
+    queryset = SalesReport.objects.all()
 
 # #For deleting, updating data
-# class modifySalesReport(generics.RetrieveUpdateDestroyAPIView):
-#     serializer_class = SalesSerializer
-#     queryset = SalesReport.objects.all()
-#     lookup_field = 'pk'
+class modifySalesReport(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = SalesSerializer
+    queryset = SalesReport.objects.all()
+    lookup_field = 'pk'
 
 
 # #FOR INVENTORY REPORT VIEW

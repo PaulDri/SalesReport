@@ -7,6 +7,7 @@ from django.utils import timezone
 
 class SalesReport(models.Model):
     date = models.DateTimeField(auto_now_add=True)
+    product_name = models.CharField(max_length=50, default="")
     product_category = models.CharField(max_length=50)
     product_sold = models.IntegerField()
     product_sales = models.DecimalField(decimal_places=2, max_digits=10000)
